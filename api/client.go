@@ -8,7 +8,6 @@ import (
 	"net/http"
 	"net/url"
 	"time"
-
 	"crowdstrike-cli/config"
 )
 
@@ -127,15 +126,12 @@ func (c *Client) makeRequest(method, endpoint string) ([]byte, error) {
 
 // GetDetectionSummary gets detection summary metrics
 func (c *Client) GetDetectionSummary() ([]byte, error) {
-	return c.makeRequest("GET", "/detects/aggregates/detects/GET/v1")
 }
 
 // GetHostSummary gets host summary metrics
 func (c *Client) GetHostSummary() ([]byte, error) {
-	return c.makeRequest("GET", "/devices/aggregates/device-count-by-platform/v1")
 }
 
 // GetIncidentSummary gets incident summary metrics
 func (c *Client) GetIncidentSummary() ([]byte, error) {
-	return c.makeRequest("GET", "/incidents/aggregates/incidents/GET/v1")
 }
