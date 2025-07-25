@@ -1,1 +1,1 @@
-# CrowdStrike CLI
+# CrowdStrike-CLI
